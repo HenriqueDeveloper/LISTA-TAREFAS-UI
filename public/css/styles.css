@@ -1,0 +1,153 @@
+* {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#img{
+  height: 60px;
+  width: 60px;
+}
+
+.texto p{
+  margin-top: 10px;
+}
+
+#navbar {
+  padding: 1em 2em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E90FF;
+  color: #fff;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbar ul li {
+  margin-left: 1em;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 100%;
+  margin: 2em auto;
+}
+
+.container .child{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home{
+  margin-left: 20px;
+}
+
+.home .texto {
+  width: 900px;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+.container form {
+  margin-top: 1.5em;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-left: 8px;
+  margin-bottom: 0.3em;
+}
+
+.form-control input,
+.form-control textarea {
+  width: 400px;
+  padding: 7px;
+  margin-left: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+form input[type='submit'] {
+  background-color: #1E90FF;
+  margin-left: 10px;
+  color: #fff;
+  padding: 0.7em 1.5em;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style: none;
+  width: 30%;
+  margin-top: 1em;
+}
+
+.task-list li {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #efefef;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-list .title {
+  font-weight: bold;
+  color: #7FFF00;
+  transition: 0.5s;
+  font-size: 1.2em;
+}
+
+.task-list .title:hover {
+  color: #333;
+}
+
+.actions {
+  display: flex;
+}
+
+.actions i {
+  font-size: 1.5em;
+  margin-right: 0.6em;
+  color: #333;
+}
+
+.actions i:hover {
+  color: #db4c3f;
+}
+
+.actions form {
+  margin: 0;
+}
+
+.actions button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.title.done {
+  text-decoration: line-through;
+  color: #ccc;
+}
