@@ -11,6 +11,7 @@ services:
     ports:
       - 5433:5432
   lista-tarefas:
+    image: lista-tarefas
     build:
       context: .
       dockerfile: ./Dockerfile
