@@ -12,12 +12,13 @@ services:
       - 5435:5432
     deploy:
       placement:
-        constraints: [node.role==manager]
+        constraints: [node.role==worker]
   lista-tarefas:
     image: lista-tarefas
     deploy:
+      replicas: 5
       placement:
-        constraints: [node.role==manager]
+        constraints: [node.role==worker]
     build:
       context: .
       dockerfile: ./Dockerfile
@@ -38,6 +39,6 @@ services:
       - "/var/run/docker.sock:/var/run/docker.sock"
     deploy:
       placement:
-        constraints: [node.role == manager]
+        constraints: [node.role==manager]
     
     
