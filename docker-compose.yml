@@ -10,8 +10,15 @@ services:
       - POSTGRES_PASSWORD=postgres
     ports:
       - 5435:5432
+    deploy:
+      placement:
+        constraints: [node.role==manager]
   lista-tarefas:
     image: lista-tarefas
+    deploy:
+      replicas: 8
+      placement:
+        constraints: [node.role==manager]
     build:
       context: .
       dockerfile: ./Dockerfile
