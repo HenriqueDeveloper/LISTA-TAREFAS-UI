@@ -12,12 +12,12 @@ services:
       - 5435:5432
     deploy:
       placement:
-        constraints: [node.role==manager]
+        constraints: [node.role==worker]
   lista-tarefas:
     image: lista-tarefas
     deploy:
       placement:
-        constraints: [node.role==manager]
+        constraints: [node.role==worker]
     build:
       context: .
       dockerfile: ./Dockerfile
