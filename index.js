@@ -26,6 +26,10 @@ app.use(express.static('public'))
 
 app.use('/tasks', taskRoutes)
 
+app.get('/', (req, res) => {
+  res.redirect('/tasks/home');
+});
+
 conn
   .sync()
   .then(() => {
