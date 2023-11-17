@@ -18,7 +18,7 @@ services:
     deploy:
       replicas: 8
       placement:
-        constraints: [node.role==worker]
+        constraints: [node.role==manager]
     build:
       context: .
       dockerfile: ./Dockerfile
