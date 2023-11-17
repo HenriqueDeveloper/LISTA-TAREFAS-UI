@@ -16,6 +16,7 @@ services:
   lista-tarefas:
     image: lista-tarefas
     deploy:
+      replicas: 5
       placement:
         constraints: [node.role==manager]
     build:
