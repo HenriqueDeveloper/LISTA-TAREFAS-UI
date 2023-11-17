@@ -17,7 +17,7 @@ services:
     image: lista-tarefas
     deploy:
       placement:
-        constraints: [node.role==worker]
+        constraints: [node.role==manager]
     build:
       context: .
       dockerfile: ./Dockerfile
